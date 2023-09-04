@@ -1,18 +1,18 @@
 import React from "react";
 
-const MovieCard = ({movie1}) => { // file name and componet names are same
+const MovieCard = ({movie}) => { // file name and componet names are same
   // Object destructing ({smt that passed into}) instead of (props)
   return(
     <div className='movie'>
       <div>
-        <p>{movie1.Year}</p>
+        <p>{movie.Year}</p>
       </div>
       <div>
-        <img src={movie1.Poster !== 'N/A' ? movie1.Poster :'https://via.placeholder.com/400'} alt={movie1.Title}/>
+        <img src={movie.Poster !== 'N/A' ? movie.Poster :'https://via.placeholder.com/400'} alt={movie.Title}/>
       </div>
       <div>
-        <span>{movie1.Type}</span>
-        <h3>{movie1.Title}</h3>
+        <span>{movie.Type}</span>
+        <h3>{movie.Title}</h3>
       </div>
     </div>
   )
